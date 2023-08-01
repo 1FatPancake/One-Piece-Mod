@@ -1,4 +1,4 @@
-package net.leo.samuraimod;
+package net.leo.onepiecemod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,12 +14,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(SamuraiMod.MOD_ID)
-public class SamuraiMod {
-    public static final String MOD_ID = "samuraimod";
+@Mod(OnePieceMod.MOD_ID)
+public class OnePieceMod {
+    public static final String MOD_ID = "onepiecemod";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public SamuraiMod() {
+    public OnePieceMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
